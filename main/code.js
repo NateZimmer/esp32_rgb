@@ -36,13 +36,23 @@ function checkForUpdate(){
 
 
 function updateRGB(r,g,b) {
-	var xhttp = new XMLHttpRequest();
-	xhttp.onreadystatechange = function() {
-		
-	};
-	var sendStr = "rgb=" + r + '_' + g + '_' + b;
-	xhttp.open("GET", sendStr, true);
-	xhttp.send();
+	if(!lockout ){
+		var xhttp = new XMLHttpRequest();
+		xhttp.onreadystatechange = function() {
+			    if (this.readyState == 4 && this.status == 200) {
+     				lockout = false;
+    			}else{
+    				
+    			}
+		};
+		var sendStr = "rgb=" + r + '_' + g + '_' + b;
+		xhttp.open("GET", sendStr, true);
+		lockout = true;
+		xhttp.send();
+			
+	}
+
+
 }
 
-setInterval(checkForUpdate,200);
+setInterval(checkForUpdate,100);
