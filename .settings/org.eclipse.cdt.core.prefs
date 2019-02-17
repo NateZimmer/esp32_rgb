@@ -1,0 +1,12 @@
+eclipse.preferences.version=1
+environment/project/0.173979346/BATCH_BUILD/delimiter=\:
+environment/project/0.173979346/BATCH_BUILD/operation=append
+environment/project/0.173979346/BATCH_BUILD/value=1
+environment/project/0.173979346/IDF_PATH/delimiter=\:
+environment/project/0.173979346/IDF_PATH/operation=replace
+environment/project/0.173979346/IDF_PATH/value=/home/nate/esp/esp-idf
+environment/project/0.173979346/PATH/delimiter=\:
+environment/project/0.173979346/PATH/operation=replace
+environment/project/0.173979346/PATH/value=/home/nate/esp/xtensa-esp32-elf/bin\:/home/nate/.local/bin\:/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/usr/games\:/usr/local/games\:/snap/bin\:$(PATH)
+environment/project/0.173979346/append=true
+environment/project/0.173979346/appendContributed=true
