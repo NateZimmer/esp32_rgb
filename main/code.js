@@ -34,6 +34,7 @@ function checkForUpdate(){
 	rp = r; gp = g; bp = b;
 }
 
+var lockout = false;
 
 function updateRGB(r,g,b) {
 	if(!lockout ){
